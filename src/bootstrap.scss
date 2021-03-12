@@ -1,0 +1,21 @@
+body {
+    background-color: aqua;
+}
+* {
+    outline: none;
+}
+.logo {
+    height: 100px;
+    width: 100px;
+}
+
+.form {
+    display: flex;
+    &_input{
+        flex: 1 0;
+        border: 3px solid red;
+        &.-active {
+            border: 3px solid greenyellow;
+        }
+    }
+}

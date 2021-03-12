@@ -1,3 +1,5 @@
+import "./bootstrap.scss";
+
 const header = document.querySelector('header');
 
 
