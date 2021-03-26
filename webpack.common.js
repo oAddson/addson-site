@@ -27,5 +27,5 @@ module.exports = {
             inject: 'body'
         })
     ],
-    target: ['es5']
+    target: 'es5'
 };

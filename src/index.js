@@ -23,7 +23,7 @@ setTimeout(() => {
     doGet(window.location.href + 'api/movies').then(el => {
         console.log('Data from Mirage Api:')
         el.movies.forEach(
-            movie => console.log('*' + movie.name)
+            movie => console.log(`-${movie.name}`)
         )
     })
 }, 500);

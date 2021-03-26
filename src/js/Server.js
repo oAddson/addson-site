@@ -1,5 +1,5 @@
 import { Server } from 'miragejs'
-
+console.log('Mirage is active')
 new Server({
   routes () {
     this.namespace = '/api'
