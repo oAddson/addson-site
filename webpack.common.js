@@ -10,15 +10,15 @@ module.exports = {
                 use: ['html-loader']
             },
             {
-                test: /\.(js|jsx|mjs)$/,
-                exclude: /(node_modules|bower_components)/,
+                test: /\.(js|jsx)$/,
+                exclude: /node_modules/,
                 use: {
-                    loader: 'babel-loader',
-                    options: {
-                        presets: ['@babel/preset-env']
-                    }
+                    loader: "babel-loader",
                 },
-            }                         
+                resolve: {
+                    extensions: [".js", ".jsx"],
+                },
+            },         
         ],
     },
     plugins: [
